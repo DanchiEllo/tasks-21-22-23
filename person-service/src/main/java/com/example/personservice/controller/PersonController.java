@@ -45,7 +45,7 @@ public class PersonController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Person> findById(int id) {
+    public Optional<Person> findById(@PathVariable int id) {
         return repository.findById(id);
     }
 
